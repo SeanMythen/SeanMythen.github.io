@@ -63,9 +63,9 @@ ul.posts li {
 }
 
 .pruple { 
- color : #0f0; text-decoration : none;
+ color : red; text-decoration : none;
 }
 
 .pruple:hover { 
- color : #0f0; text-decoration : underline;
+ color : red; text-decoration : underline;
 }
