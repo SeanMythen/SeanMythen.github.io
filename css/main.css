@@ -66,6 +66,10 @@ ul.posts li {
  color : white; text-decoration : underline;
 }
 
-.pruple-under:hover { 
- color : red; text-decoration : underline;
+.white-nounder { 
+ color : white; text-decoration : none;
+}
+
+.white-nounder:hover { 
+ color : white; text-decoration : underline;
 }
