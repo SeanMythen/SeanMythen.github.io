@@ -19,9 +19,9 @@ nav ul li, footer ul li {
     margin-right: 20px;
     color:#FFFFFF;
 }
-a.posts {
+a {
     text-decoration: none;
-    color: white;
+    color:;
 }
 a:hover {
     text-decoration: underline;
@@ -46,12 +46,12 @@ footer {
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
-    color:#FFFFFF;
+    color:white;
 }
 
 ul.posts li {
     list-style: none;
-    color:#FFFFFF;
+    color:white;
 }
 
 .white { 
