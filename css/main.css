@@ -62,10 +62,10 @@ ul.posts li {
  color : white; text-decoration : overline underline;
 }
 
-.pruple { 
- color : red; text-decoration : none;
+.white-under { 
+ color : white; text-decoration : underline;
 }
 
-.pruple:hover { 
+.pruple-under:hover { 
  color : red; text-decoration : underline;
 }
