@@ -53,3 +53,16 @@ ul.posts li {
     list-style: none;
     color:#FFFFFF;
 }
+
+.white { 
+ color : white; text-decoration : none;
+}
+
+.green { 
+ color : #0f0; text-decoration : none;
+}
+
+.blue { 
+ color : #00f; text-decoration : none;
+}
+
