@@ -3,7 +3,7 @@ body {
     background-image: url('/img/b80537eff062f8aaf589783d0a10d2a9test.jpg');
     background-size: 100% ;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: ;
     margin: 60px auto;
     width: 70%;
 }
