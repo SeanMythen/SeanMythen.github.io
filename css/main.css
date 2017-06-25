@@ -58,11 +58,14 @@ ul.posts li {
  color : white; text-decoration : none;
 }
 
-.green { 
+.white:hover { 
+ color : white; text-decoration : overline underline;
+}
+
+.pruple { 
  color : #0f0; text-decoration : none;
 }
 
-.blue { 
- color : #00f; text-decoration : none;
+.pruple:hover { 
+ color : #0f0; text-decoration : underline;
 }
-
