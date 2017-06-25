@@ -19,9 +19,9 @@ nav ul li, footer ul li {
     margin-right: 20px;
     color:#FFFFFF;
 }
-a {
+a.posts {
     text-decoration: none;
-    color:;
+    color: white;
 }
 a:hover {
     text-decoration: underline;
