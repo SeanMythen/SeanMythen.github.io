@@ -1,4 +1,8 @@
 body {
+    background-color: #939393;
+    background-image: url('img/test');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 60px auto;
     width: 70%;
 }
