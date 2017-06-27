@@ -7,6 +7,10 @@ body {
     margin: 60px auto;
     width: 70%;
 }
+.center-text
+{
+text-align: center
+}
 .center-image
 {
     margin: 0 auto;
