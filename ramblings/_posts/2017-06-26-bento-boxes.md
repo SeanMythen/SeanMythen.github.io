@@ -10,8 +10,7 @@ Previously I'd been biking to work with a plastic Walmart bag that I'd deemed 'm
 </p>
 <p align="center">
 I'd been trying to eat healthier and save money the past couple months, but I wasn't able to make it stick.  My Bento Box Lunch Box turned out to be my savior!  Something about packing a meal at home and bringing it with you to open during lunch is so rewarding; I feel like link opening a treasure chest.  Acquiring a 'proper' lunch box has also pushed me to explore diverse types of food that I really enjoy eating.  This may sound silly, but I think my new lunch box is making me a better person! Ok, it does sound silly.  Here's a picture of my beuatiful bento!
-</p>
-<p align="center">
+
 ![Bento Box!](/img/bento-box.jpg)
 </p>
 <p align="center">
