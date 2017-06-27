@@ -3,7 +3,7 @@ layout: post
 title: "Bento Boxes?!"
 date: 2017-06-26
 ---
-
+<p align="center">
 Welp, looks like I'm making my first ever [ramble](http://seanmythen.net/ramblings/) about Bento Boxes.
 The other day I finally got around to getting my site back online and coincidentally I had just found a new lunch box at the market.
 Previously I'd been biking to work with a plastic Walmart bag that I'd deemed 'my lunchbox'.
@@ -13,4 +13,4 @@ I'd been trying to eat healthier and save money the past couple months, but I wa
 ![Bento Box!](/img/bento-box.jpg)
 
 Check back in on my [Ramblings](http://seanmythen.net/ramblings/) from time to time to see what I'm up to.
-
+</p>
