@@ -6,7 +6,7 @@ body {
     background-attachment: ;
     margin: 60px auto;
     width: 70%;
-    font-family: 'Vollkorn', serif;
+    font-family: 'Lato', sans-serif;
 }
 .center-text
 {
@@ -19,7 +19,7 @@ text-align: center
 }
 
 nav ul, footer ul {
-    font-family: 'Vollkorn', serif;
+    font-family: 'Lato', sans-serif;
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -43,7 +43,7 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family: 'Vollkorn', serif;
+    font-family: 'Lato', sans-serif;
     color:#FFFFFF;
 }
 p {
