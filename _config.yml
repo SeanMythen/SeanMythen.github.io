@@ -19,5 +19,4 @@ email: mythen.sean@gmail.com
 github_username: SeanMythen
 
 gems:
-  - jekyll-seo-tag
   - jekyll-sitemap
