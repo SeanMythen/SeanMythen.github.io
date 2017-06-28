@@ -1,10 +1,6 @@
 name: Sean Mythen
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-title: Sean Mythen
-author: Sean Mythen
-description: Sean's personal website!
-url: seanmythen.net
 
 gems:
   - jekyll-seo-tag
