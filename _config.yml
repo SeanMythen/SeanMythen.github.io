@@ -2,5 +2,14 @@ name: Sean Mythen
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 
+title: Sean's Personal Website!
+url: "seanmythen.net"
+description: Stay up to date with everything Sean!
+email: mythen.sean@gmail.com
+github_username: SeanMythen
+
+
+
+
 gems:
   - jekyll-seo-tag
