@@ -14,7 +14,6 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 google-analytics: UA-64778303-6
 
-description: Stay up to date with everything Sean!
 email: mythen.sean@gmail.com
 github_username: SeanMythen
 
