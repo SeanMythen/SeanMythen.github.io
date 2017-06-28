@@ -45,6 +45,7 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family: 'Oswald', sans-serif;
+    font-style: normal;
     color:#FFFFFF;
 }
 p {
