@@ -10,3 +10,4 @@ github_username: SeanMythen
 
 gems:
   - jekyll-seo-tag
+  - jekyll-sitemap
