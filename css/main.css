@@ -4,14 +4,16 @@ body {
     background-size: 100% ;
     background-repeat: no-repeat;
     background-attachment: ;
-    margin: 20px auto;
+    margin: 60px auto;
     width: 80%;
     font-family: 'Lato', sans-serif;
 }
+
 .center-text
 {
-text-align: center
+    text-align: center
 }
+
 .center-image
 {
     margin: 0 auto;
@@ -43,14 +45,16 @@ a:hover {
     color:;
 }
 h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     font-family: 'Source Sans Pro', sans-serif;
     color:#FFFFFF;
+    text-align: center;
 }
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #FFFFFF;
+    text-align: center;
 }
 footer {
     border-top: 1px solid #d5d5d5;
