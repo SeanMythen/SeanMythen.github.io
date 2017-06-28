@@ -1,9 +1,19 @@
-name: Sean Mythen
+# Site settings
+title: "The Adventures of Seán"
+author: "Seán Mythen"
+description: "This is Seán's personal website. Have a look around!"
+keywords: "Science, Computers, Programming, Video Games, Music, Tesla, Android, Unreal."
+colophon: "© MMXVII by Seán Mythen"
+
+baseurl: ""
+url: "seanmythen.net"
+
+
+simple_search: http://google.com/search
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+google-analytics: UA-64778303-6
 
-title: Sean's Personal Website!
-url: "seanmythen.net"
 description: Stay up to date with everything Sean!
 email: mythen.sean@gmail.com
 github_username: SeanMythen
