@@ -20,3 +20,4 @@ github_username: SeanMythen
 
 gems:
   - jekyll-sitemap
+  - jekyll-seo-tag
