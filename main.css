@@ -6,7 +6,7 @@
   cursor: default;
 }
 
-html {
+body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -15,6 +15,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  
   height: 100vh;
 
   -webkit-background-size: cover;
@@ -53,7 +54,7 @@ html {
     rgba(255, 255, 255, 0.6)
   );
   border-radius: 7px;
-  padding: 11px 7.75px 7px 7px;
+  padding: 10px 8px 6px 8px;
   transition: box-shadow 0.4s ease, border-radius 0.3s ease;
 }
 
