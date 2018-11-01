@@ -1,5 +1,0 @@
-User-Agent: *
-Disallow: /.gitignore
-Allow: /
-
-Sitemap: http://seanmythen.net/sitemap.xml
