@@ -147,7 +147,7 @@ h2 {
 
 #blinking {
   font-weight: bold;
-  animation: blinkingText 0.6s infinite;
+  animation: blinkingText 1.25s infinite;
   animation-timing-function: ease-in;
 }
 
