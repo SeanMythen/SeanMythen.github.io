@@ -1,2 +1,2 @@
-# seanmythen.net
+# SeanMythen.net
 My Personal Website. Check it!
