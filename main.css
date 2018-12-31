@@ -30,13 +30,59 @@ body {
   align-content: center;
 }
 
+#nav > #span1{
+  position: relative;
+  left: 100px;
+  bottom: 35px;
+  visibility: hidden;
+  transition: opacity .2s;
+  opacity: 0;
+  text-shadow: 0px 0px 1px white;
+  font-size: 20px;
+}
+
+#nav > #span2{
+
+  position: relative;
+  left: 18px;
+  bottom: 35px;
+  visibility: hidden;
+  transition: opacity .2s;
+  opacity: 0;
+  text-shadow: 0px 0px 1px white;
+  font-size: 20px;
+}
+
+#linkedin, i{
+  cursor: pointer;
+}
+
+#codepen, i{
+  cursor: pointer;
+}
+
+#linkedin:hover + #span2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+#codepen:hover + #span1 {
+  visibility: visible;
+  opacity: 1;
+}
+
+
 #nav {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 5px;
 }
+
+
 
 #CV {
   font-family: Arial, Helvetica, sans-serif;
@@ -66,7 +112,12 @@ body {
   box-shadow: 0px 0px 30px 2px black;
 }
 
+
+
+
 #linkedin {
+  position: relative;
+  left: 75px;
   text-decoration: none;
   margin-left: 15px;
   color: black;
@@ -87,6 +138,8 @@ body {
 }
 
 #codepen {
+  position: relative;
+  left: 160px;
   text-decoration: none;
   margin-left: 15px;
   color: black;
@@ -119,7 +172,6 @@ body {
   border-radius: 5px;
   margin-bottom: 10px;
 }
-
 
 h1 {
   font-size: 80px;
