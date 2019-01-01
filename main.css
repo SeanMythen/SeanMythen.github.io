@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 * {
   margin: 0;
   padding: 0;
@@ -83,37 +84,85 @@ body {
 }
 
 
-
-#CV {
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 17px;
-  margin-right: auto;
-
-  box-shadow: 0px 0px 40px -6px black;
+#skillsCard{
+  margin: 3px 60px 0px 60px;
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+  box-shadow: 2px -2px 40px -6px black;
   background-image: linear-gradient(
     220deg,
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.6)
+    rgba(255, 60, 0, 0.6),
+    rgba(207, 21, 21, 0.7),
+    rgba(134, 18, 18, 0.8)
   );
-  border-radius: 7px;
-  padding: 10px 8px 6px 8px;
-  transition: box-shadow 0.4s ease, border-radius 0.3s ease;
+  border-radius: 5px;
+}
+
+#skilltitle{
+  font-family: 'Open Sans', sans-serif;
+  margin: 3px 90px 0px 90px;
+  text-align: center;
+  padding:  3px 0px 3px 0px;
+  box-shadow: 2px -2px 40px -6px black;
+  background-image: linear-gradient(
+    220deg,
+    rgba(255, 60, 0, 0.6),
+    rgba(207, 21, 21, 0.7),
+    rgba(134, 18, 18, 0.8)
+  );
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 22px;
+  border-radius: 5px;
+}
+
+#skillname{
+  font-family: 'Open Sans', sans-serif;
+  margin: 3px 40px 0px 40px;
+  text-align: center;
+  padding:  3px 0px 3px 0px;
+  box-shadow: 2px -2px 40px -6px black;
+  background-image: linear-gradient(
+    220deg,
+    rgba(255, 60, 0, 0.6),
+    rgba(207, 21, 21, 0.7),
+    rgba(134, 18, 18, 0.8)
+  );
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 22px;
+  border-radius: 5px;
+}
+
+h3{
+  font-size: 37px;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+h4{
+  position: relative;
+  font-size: 17px;
+  letter-spacing: -4px;
+  margin-bottom: 10px;
+}
+
+h4 > i {
+  cursor: default;
+  padding: 0 10px 0 10px;
+}
+
+
+#htmlicon, #cssicon, #jsicon, #pythonicon, #giticon, #reacticon, #linuxicon, #windowsicon{
+  color: rgba(255, 255, 255, 0.8);
+  transition: color .2s;
+}
+
+#htmlicon:hover, #cssicon:hover, #jsicon:hover, #pythonicon:hover, #giticon:hover, #reacticon:hover, #linuxicon:hover, #windowsicon:hover{
+  color: rgba(0, 0, 0, 0.8);
 }
 
 #nav:visited {
   color: black;
 }
-
-#CV:hover {
-  box-shadow: 0px 0px 30px 2px black;
-}
-
-
-
 
 #linkedin {
   position: relative;
@@ -160,7 +209,7 @@ body {
 }
 
 #card {
-  text-align: left;
+  text-align: center;
   padding: 3px 10px 10px 10px;
   box-shadow: 2px -2px 40px -6px black;
   background-image: linear-gradient(
@@ -170,7 +219,7 @@ body {
     rgba(255, 255, 255, 0.6)
   );
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 h1 {
