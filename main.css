@@ -9,10 +9,12 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  
 }
 
 #bg {
-  background: url(/images/bg.jpg);
+  overflow-x: hidden;
+  background: url(images/bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -80,7 +82,7 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  margin-bottom: 5px;
+  margin: 0 50px 5px 0;
 }
 
 
@@ -100,7 +102,7 @@ body {
 
 #skilltitle{
   font-family: 'Open Sans', sans-serif;
-  margin: 3px 90px 0px 90px;
+  margin: 3px 130px 0px 130px;
   text-align: center;
   padding:  3px 0px 3px 0px;
   box-shadow: 2px -2px 40px -6px black;
@@ -117,7 +119,7 @@ body {
 
 #skillname{
   font-family: 'Open Sans', sans-serif;
-  margin: 3px 40px 0px 40px;
+  margin: 3px 95px 0px 95px;
   text-align: center;
   padding:  3px 0px 3px 0px;
   box-shadow: 2px -2px 40px -6px black;
@@ -219,6 +221,7 @@ h4 > i {
     rgba(255, 255, 255, 0.6)
   );
   border-radius: 5px;
+  margin: 0 50px 20px 50px;
   margin-bottom: 20px;
 }
 
@@ -232,13 +235,37 @@ h2 {
   text-align: center;
 }
 
+
 @media only screen and (max-width: 700px) {
   h1 {
-    font-size: 14.5vw;
+    font-size: 12.2vw;
   }
 
   h2 {
     font-size: 4.5vw;
+  }
+}
+
+
+@media only screen and (max-width: 540px) {
+  h1 {
+    font-size: 10.75vw;
+  }
+
+  h4{
+    white-space: nowrap;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  h1 {
+    font-size: 12.5vw;
+  }
+
+  h4{
+    white-space: nowrap;
+    font-size: 12px;
   }
 }
 
