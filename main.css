@@ -244,18 +244,15 @@ h2 {
   }
 }
 
-@media (pointer: fine) {
-  a span {
-    display: none;
-  }
-  a:hover span {
-    display: inline-block;
-  }
-}
-
-
-
 @media only screen and (max-width: 540px) {
+  #linkedin:hover + #span2 {
+    visibility: hidden;
+  }  
+  
+  #codepen:hover + #span1 {
+    visibility: hidden;
+  }
+
   h1 {
     font-size: 10.75vw;
   }
