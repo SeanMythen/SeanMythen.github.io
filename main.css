@@ -82,7 +82,7 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  margin: 0 50px 5px 0;
+  margin: 0 70px 5px 0;
 }
 
 
@@ -134,16 +134,11 @@ body {
   border-radius: 5px;
 }
 
-h3{
-  font-size: 37px;
-  letter-spacing: 1.5px;
-  margin-bottom: 10px;
-}
-
 h4{
   position: relative;
   font-size: 17px;
   letter-spacing: -4px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -221,7 +216,7 @@ h4 > i {
     rgba(255, 255, 255, 0.6)
   );
   border-radius: 5px;
-  margin: 0 50px 20px 50px;
+  margin: 0 70px 20px 70px;
   margin-bottom: 20px;
 }
 
@@ -244,7 +239,11 @@ h2 {
   h2 {
     font-size: 4.5vw;
   }
+    h4{
+    white-space: nowrap; 
+  }
 }
+
 
 
 @media only screen and (max-width: 540px) {
@@ -258,7 +257,26 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 380px) {
+  #card {
+    margin: 0 100px 20px 100px;
+  }
+
+  #nav {
+    margin: 0 100px 5px 0;
+  }
+
+  #skilltitle{
+    font-size: 18px;
+  }
+
+  h4{
+    font-size: 12px;
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
   h1 {
     font-size: 12.5vw;
   }
