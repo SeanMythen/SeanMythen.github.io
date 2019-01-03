@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-weight: normal;
+  font-weight: 500;
   cursor: default;
 }
 
@@ -225,6 +225,7 @@ h1 {
 }
 
 h2 {
+  font-weight: 400;
   font-size: 27px;
   text-align: center;
 }
@@ -300,6 +301,9 @@ h2 {
 }
 
 #blinking {
+  position: relative;
+  right: 2px;
+  bottom: 1px;
   font-weight: 700;
   animation: blinkingText 1.25s infinite;
   animation-timing-function: ease-in;
