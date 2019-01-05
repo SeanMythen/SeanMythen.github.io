@@ -34,7 +34,7 @@ body {
 
 #nav > #span1{
   position: relative;
-  left: 176px;
+  left: 175px;
   bottom: 35px;
   visibility: hidden;
   transition: opacity .2s;
