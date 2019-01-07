@@ -102,9 +102,25 @@ body {
   margin: 0 70px 5px 0;
 }
 
+#skilltitle{
+  font-family: 'Open Sans', sans-serif;
+  margin: 3px 190px 0px 190px;
+  text-align: center;
+  padding:  3px 0px 3px 0px;
+  box-shadow: 2px -2px 40px -6px black;
+  background-image: linear-gradient(
+    220deg,
+    rgba(255, 60, 0, 0.6),
+    rgba(207, 21, 21, 0.7),
+    rgba(150, 20, 20, 0.8)
+  );
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 22px;
+  border-radius: 5px;
+}
 
 #skillsCard{
-  margin: 3px 95px 0px 95px;
+  margin: 3px 145px 0px 145px;
   text-align: center;
   padding: 5px 10px 5px 10px;
   box-shadow: 2px -2px 40px -6px black;
@@ -117,39 +133,34 @@ body {
   border-radius: 5px;
 }
 
-#skilltitle{
+
+#learningtitle{
   font-family: 'Open Sans', sans-serif;
-  margin: 3px 130px 0px 130px;
+  margin: 15px 220px 0px 220px;
   text-align: center;
   padding:  3px 0px 3px 0px;
   box-shadow: 2px -2px 40px -6px black;
   background-image: linear-gradient(
     220deg,
-    rgba(255, 60, 0, 0.6),
-    rgba(207, 21, 21, 0.7),
-    rgba(150, 20, 20, 0.8)
+    rgba(255, 0, 0, 0.6), rgba(107, 21, 207, 0.6), rgba(150, 20, 20, 0.6)
   );
   color: rgba(255, 255, 255, 0.9);
   font-size: 22px;
   border-radius: 5px;
 }
 
-#skillname{
-  font-family: 'Open Sans', sans-serif;
-  margin: 3px 95px 0px 95px;
+#learningCard{
+  margin: 3px 180px 0px 180px;
   text-align: center;
-  padding:  3px 0px 3px 0px;
+  padding: 5px 10px 5px 10px;
   box-shadow: 2px -2px 40px -6px black;
   background-image: linear-gradient(
     220deg,
-    rgba(255, 60, 0, 0.6),
-    rgba(207, 21, 21, 0.7),
-    rgba(134, 18, 18, 0.8)
+    rgba(255, 0, 0, 0.6), rgba(107, 21, 207, 0.6), rgba(150, 20, 20, 0.6)
   );
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 22px;
   border-radius: 5px;
 }
+
 
 h4{
   position: relative;
@@ -165,12 +176,12 @@ h4 > i {
 }
 
 
-#htmlicon, #cssicon, #jsicon, #pythonicon, #giticon, #reacticon, #linuxicon, #windowsicon{
+#htmlicon, #cssicon, #jsicon, #pythonicon, #giticon, #reacticon, #linuxicon, #windowsicon, #phpicon, #laravelicon{
   color: rgba(255, 255, 255, 0.8);
   transition: color .2s;
 }
 
-#htmlicon:hover, #cssicon:hover, #jsicon:hover, #pythonicon:hover, #giticon:hover, #reacticon:hover, #linuxicon:hover, #windowsicon:hover{
+#htmlicon:hover, #cssicon:hover, #jsicon:hover, #pythonicon:hover, #giticon:hover, #reacticon:hover, #linuxicon:hover, #windowsicon:hover, #phpicon:hover, #laravelicon:hover{
   color: rgba(0, 0, 0, 0.8);
 }
 
