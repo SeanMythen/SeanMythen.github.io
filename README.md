@@ -1,2 +1,2 @@
 # SeanMythen.net
-My Personal Website. Check it!
+My Personal Website. Check it Out!
