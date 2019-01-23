@@ -392,14 +392,15 @@ h2 {
   
   font-weight: 500;
   margin-top: 0px;
-  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   
 }
 
 #description {
   font-weight: 400;
   font-size: 17px;
-  margin: 5px 0 25px 0;
+  margin: 0px 0 15px 0;
   line-height: 22px;
 
 }
