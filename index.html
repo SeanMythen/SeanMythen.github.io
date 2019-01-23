@@ -32,13 +32,20 @@
     <meta name="Author" content="Seán Mythen" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <link rel="prefetch" href="portfolio.html" />
     
   </head>
 
-  <body>
+  <body id="body" >
+
+      <script>document.getElementById('body').className += ' fade-out';</script>
+
+
     <div id="bg">
       <div id="container">
         <div id="nav">
+          <a id="portfolio" href="/portfolio.html">Portfolio</a>     
           <a id="github" href="https://github.com/SeanMythen">
             <i class="fab fa-github fa-lg"></i>
           </a>
