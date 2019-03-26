@@ -10,6 +10,13 @@
 
 html{
   background-color: rgba(255, 255, 255, 1);
+    overflow-x: hidden;
+
+  background: url(images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 
@@ -33,18 +40,7 @@ body {
 
 
 #bg {
-  overflow-x: hidden;
-
   height: 100vh;
-
-  background: url("images/bg.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,9 +49,9 @@ body {
 }
 
 #nav > #span1{
-  position: relative;
-  left: 175px;
-  bottom: 35px;
+  position: absolute;
+  right: 87px;
+  bottom: 47px;
   visibility: hidden;
   transition: opacity .2s;
   opacity: 0;
@@ -64,9 +60,9 @@ body {
 }
 
 #nav > #span2{
-  position: relative;
-  left: 100px;
-  bottom: 35px;
+  position: absolute;
+  right: 29px;
+  bottom: 47px;
   visibility: hidden;
   transition: opacity .2s;
   opacity: 0;
@@ -75,9 +71,9 @@ body {
 }
 
 #nav > #span3{
-  position: relative;
-  left: 18px;
-  bottom: 35px;
+  position: absolute;
+  right: -22px;
+  bottom: 47px;
   visibility: hidden;
   transition: opacity .2s;
   opacity: 0;
@@ -114,17 +110,17 @@ body {
 
 
 #nav {
+  width: 100%;
+  height: 47px;
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  margin: 0 70px 5px 0;
 }
 
 #skilltitle{
   font-family: 'Open Sans', sans-serif;
-  margin: 3px 190px 0px 190px;
   text-align: center;
   padding:  3px 0px 3px 0px;
   box-shadow: 2px -2px 40px -6px black;
@@ -137,12 +133,13 @@ body {
   color: rgba(255, 255, 255, 0.9);
   font-size: 22px;
   border-radius: 5px;
+  width: 225px;
 }
 
 #skillsCard{
-  margin: 3px 145px 0px 145px;
+  margin: 3px 0px 3px 0px;
   text-align: center;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 5px 5px 5px;
   box-shadow: 2px -2px 40px -6px black;
   background-image: linear-gradient(
     220deg,
@@ -156,7 +153,6 @@ body {
 
 #learningtitle{
   font-family: 'Open Sans', sans-serif;
-  margin: 15px 220px 0px 220px;
   text-align: center;
   padding:  3px 0px 3px 0px;
   box-shadow: 2px -2px 40px -6px black;
@@ -167,12 +163,14 @@ body {
   color: rgba(255, 255, 255, 0.9);
   font-size: 22px;
   border-radius: 5px;
+  width: 150px;
+  margin-top: 20px;
 }
 
 #learningCard{
-  margin: 3px 180px 0px 180px;
+  margin: 3px 0px 3px 0px;
   text-align: center;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 5px 5px 5px;
   box-shadow: 2px -2px 40px -6px black;
   background-image: linear-gradient(
     220deg,
@@ -210,10 +208,10 @@ h4 > i {
 }
 
 #github {
-  position: relative;
-  left: 226px;
+  position: absolute;
+  right: 100px;
   text-decoration: none;
-  margin-left: 15px;
+  /* margin-left: 15px; */
   color: black;
   box-shadow: 0px 0px 40px -6px black;
   background-image: linear-gradient(
@@ -232,10 +230,10 @@ h4 > i {
 }
 
 #codepen {
-  position: relative;
-  left: 160.5px;
+  position: absolute;
+  right: 50px;
   text-decoration: none;
-  margin-left: 15px;
+  /* margin-left: 15px; */
   color: black;
   box-shadow: 0px 0px 40px -6px black;
   background-image: linear-gradient(
@@ -254,10 +252,10 @@ h4 > i {
 }
 
 #linkedin {
-  position: relative;
-  left: 76px;
+  position: absolute;
+  
   text-decoration: none;
-  margin-left: 15px;
+  /* margin-left: 15px; */
   color: black;
   box-shadow: 0px 0px 40px -6px black;
   background-image: linear-gradient(
@@ -276,6 +274,7 @@ h4 > i {
 }
 
 #card {
+  min-width: 260px;
   text-align: center;
   padding: 3px 10px 10px 10px;
   box-shadow: 2px -2px 40px -6px black;
@@ -286,7 +285,7 @@ h4 > i {
     rgba(255, 255, 255, 0.6)
   );
   border-radius: 5px;
-  margin: 0 70px 20px 70px;
+  margin: 0px 0px 20px 0px;
   margin-bottom: 20px;
 }
 
@@ -341,7 +340,7 @@ h2 {
 
 #portfolio {  
   position: absolute;
-  left: 70px;
+  left: 0px;
   text-decoration: none;
   color: black;
   box-shadow: 0px 0px 40px -6px black;
@@ -362,13 +361,29 @@ h2 {
 }
 
 #container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   opacity: 1;
   transition: .3s;
   visibility: visible;
+  min-width: 315px;
+  min-height: 500px;
+}
+
+#top_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 #portfolioContainer{
-  padding: 3px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
   box-shadow: 2px -2px 40px -6px black;
   background-image: linear-gradient(
     220deg,
@@ -390,7 +405,6 @@ h2 {
 #project {
   
   font-weight: 500;
-  margin-top: 0px;
   margin-top: 5px;
   margin-bottom: 10px;
   
@@ -458,8 +472,10 @@ h2 {
 
 
 #portfolioPage{
+  margin-top: auto;
+  margin-bottom: auto;
   width: 90vw;
-  height: 90vh;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -537,12 +553,9 @@ h2 {
 
 @media only screen and (max-width: 460px) {
   #card {
-    margin: 0 100px 20px 100px;
+    margin: 0px 0px 20px 0px;
   }
 
-  #nav {
-    margin: 0 100px 5px 0;
-  }
 
   #skilltitle, #learningtitle{
     font-size: 18px;
@@ -560,7 +573,6 @@ h2 {
 
   #portfolio {
     position: absolute;
-    left: 100px;
   }
 }
 
@@ -577,12 +589,9 @@ h2 {
 
 @media only screen and (max-width: 385px) {
   #card {
-    margin: 0 140px 20px 140px;
+    margin: 0px 0px 20px 0px;
   }
 
-  #nav {
-    margin: 0 140px 5px 0;
-  }
   h1 {
     font-size: 11.25vw;
   }
@@ -605,7 +614,6 @@ h2 {
 
   #portfolio {
     position: absolute;
-    left: 140px;
   }
   }
 
