@@ -384,7 +384,7 @@ h2 {
   opacity: 1;
   transition: .3s;
   visibility: visible;
-  min-height: 500px;
+  min-height: 775px;
 }
 
 #top_container{
@@ -601,7 +601,7 @@ h2 {
   }
 
   #container2{
-    min-height: 775px;
+    min-height: 900px;
   }
 }
 
