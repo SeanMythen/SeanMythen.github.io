@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://seanmythen.net/favicon-32x32.png" />
+    <meta charset="utf-8">
+    <title>Startpage</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+        .fade-in {
+            animation-name: fadeIn;
+            animation-duration: .75s;
+            position: relative;
+        }
+        @keyframes fadeIn {
+            from {opacity:0;
+            top: 100px;}
+            to {opacity: 1;
+            top: 0px;}
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Khula', sans-serif;
+            color: white;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: url(https://raw.githubusercontent.com/SeanMythen/images/master/Triangle%20Background.png) no-repeat center center fixed;
+            background-size: cover;
+        }
+        .date{
+            background: #191919dd;
+            border-radius: 8px;
+            padding: 15px;
+            width: 10%;
+            min-width: 200px;
+            text-align: center;
+            min-height: 78pxpx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            align-self: flex-start;
+            margin: 20px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            font-weight: 400;
+        }
+        .search{
+            margin: 20px auto 20px;
+            width: 50%;          
+        }
+
+        #searchbox {
+            font-size:25px;
+            border-radius: 8px;
+            outline: none;
+            padding: 11px 15px 9px 15px;
+            width: 100%;
+            text-align: left;  
+            background: #191919dd;
+            border: none;
+        }
+        .links-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 75%;
+            max-width: 1250px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+            background: #191919dd;
+            border-radius: 8px;
+        }
+        .site-group {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            align-items: center;
+            border-radius: 8px;
+            padding: 10px;
+            width: 100%;
+            flex-wrap: wrap;
+            
+        }
+        .site-group .site-group__title{
+            width: 200px;
+            text-align: right;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .site-group .site-group__title::after{
+            content: " | ";
+        }
+
+        .green, .green-hover:hover {
+            color: #06d6a0;
+        }
+
+        .red, .red-hover:hover {
+            color: #ef476f;
+        }
+
+        .yellow, .yellow-hover:hover {
+            color: #ffd166;
+        }
+
+        .blue, .blue-hover:hover{
+            color: #118ab2;
+        }
+
+        .grey, .grey-hover:hover {
+            color: #073b4c;
+        }
+
+        .purple, .purple-hover:hover {
+            color: #9d4edd;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+        }
+
+        .links a {
+            padding-left: 15px;
+            padding-right: 15px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;
+            transition: .3s;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .site-group {
+            flex-direction: column;
+        }
+        .site-group .site-group__title{
+            text-align: center;
+        }
+        .site-group .site-group__title::after{
+            content: "";
+        }
+    }
+
+
+    </style>
+
+    <script>  
+  function date() 
+    {   
+        var a = Date.now();
+        var b = new Date(a);
+        var time_options = {
+            hour: 'numeric',
+            minute: 'numeric',
+            hour12: true
+        };
+        var date_options = {
+            dateStyle: 'long'
+        }
+        var f = b.toLocaleTimeString('en-US', time_options)
+        var g = b.toLocaleDateString('en-US',date_options)
+        var timeString = g+" "+"<br>"+" "+f.toLowerCase()
+        document.getElementById("todaysDate").innerHTML = timeString;
+    }
+    setInterval(date,1000);
+    </script>
+
+  </head>
+
+  <body onload="date()">
+    <div class="date fade-in">
+        <p id="todaysDate"></p>
+    </div>  
+    <form class="search fade-in" method="GET" action="http://www.google.com/search" autocomplete="off">
+        <input id="searchbox" type="text" placeholder="" name="q" autofocus>
+    </form>
+      <div class="links-container fade-in">
+    <div class="site-group">
+        <h2 class="site-group__title green">Development</h2>
+            <div class="links">
+                <a class="green-hover" href="https://accounts.shopify.com/store-login">Shopify</a>
+                <a class="green-hover" href="https://www.w3schools.com/cssref/css_selectors.asp">CSS Ref</a>
+                <a class="green-hover" href="https://ship.pirateship.com/ship">Pirate Ship</a>
+                <a class="green-hover" href="https://www.upwork.com/ab/find-work/domestic">Upwork</a>
+                <a class="green-hover" href="https://analytics.google.com/analytics/web/">Google Analytics</a>
+            </div>
+    </div>
+    <div class="site-group">
+        <h2 class="site-group__title red">Productvity</h2> 
+            <div class="links">
+                <a class="red-hover" href="https://mail.google.com/mail/u/0/">Gmail</a>
+                <a class="red-hover" href="https://calendar.google.com/calendar/u/0/r">Calendar</a>
+                <a class="red-hover" href="https://drive.google.com/drive/my-drive">Drive</a>
+            </div>       
+    </div>
+    <div class="site-group">
+        <h2 class="site-group__title purple">Social</h2>       
+            <div class="links">
+                <a class="purple-hover" href="https://www.instagram.com/">Instagram</a>
+                <a class="purple-hover" href="https://www.pinterest.com/business/hub/">Pinterest</a>
+            </div> 
+    </div>
+    <div class="site-group">
+        <h2 class="site-group__title yellow">Entertainment</h2>       
+            <div class="links">
+                <a class="yellow-hover" href="https://www.reddit.com/">Reddit</a>
+                <a class="yellow-hover" href="https://www.youtube.com/">Youtube</a>
+                <a class="yellow-hover" href="https://www.netflix.com/">Netflix</a>
+                <a class="yellow-hover" href="https://www.amazon.com/Amazon-Video/b?node=2858778011">Prime Video</a>
+                <a class="yellow-hover" href="https://www.twitch.tv/">Twitch</a>
+                <a class="yellow-hover" href="https://www.amazon.com/">Amazon</a>
+            </div> 
+    </div>
+    </div>
+  </body>
+</html>
