@@ -90,6 +90,7 @@
 
         .google-section:hover a {
             margin-bottom: 10px;
+            position: relative;
         }
 
         .google-section img {
@@ -230,16 +231,16 @@
         <p id="todaysDate"></p>
     </div>
     <div class="google-section fade-in">
-        <a href="https://mail.google.com/mail/u/0/">
+        <a style="z-index:1;" href="https://mail.google.com/mail/u/0/">
             <img alt="Gmail" src="/images/gmail.png">
          </a>
-         <a href="https://drive.google.com/drive/my-drive">
+         <a style="z-index:2;" href="https://drive.google.com/drive/my-drive">
             <img alt="Drive" src="/images/drive.png">
          </a>
-         <a href="https://calendar.google.com/calendar/u/0/r">
+         <a style="z-index:3;" href="https://calendar.google.com/calendar/u/0/r">
             <img alt="Google Calendar" src="/images/calendar.png">
          </a>
-         <a href="https://www.google.com/maps">
+         <a style="z-index:4;" href="https://www.google.com/maps">
             <img alt="Google Maps" src="/images/google-maps.png">
          </a>
     </div>  
