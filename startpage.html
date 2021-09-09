@@ -10,14 +10,36 @@
 
         .fade-in {
             animation-name: fadeIn;
-            animation-duration: .75s;
+            animation-duration: 1.35s;
             position: relative;
         }
         @keyframes fadeIn {
+            0% { opacity:0;}
+            50% { opacity:0;}
+            100% { opacity:1;}
+        }
+
+        .fade-in-up {
+            animation-name: fadeInUp;
+            animation-duration: .75s;
+            position: relative;
+        }
+        @keyframes fadeInUp {
             from {opacity:0;
             top: 100px;}
             to {opacity: 1;
             top: 0px;}
+        }
+
+        .fade-in-up-slower {
+            animation-name: fadeInUpSlower;
+            animation-duration: .75s;
+            position: relative;
+        }
+        @keyframes fadeInUpSlower {
+            0% { opacity:0; top: 100px;}
+            20% { opacity:0; top: 100px;}
+            100% { opacity:1; top: 0px;}
         }
 
         * {
@@ -244,10 +266,10 @@
             <img alt="Google Maps" src="/images/google-maps.png">
          </a>
     </div>  
-    <form class="search fade-in" method="GET" action="https://www.google.com/search" autocomplete="off">
+    <form class="search fade-in-up" method="GET" action="https://www.google.com/search" autocomplete="off">
         <input id="searchbox" type="text" placeholder="" name="q" autofocus>
     </form>
-      <div class="links-container fade-in">
+      <div class="links-container fade-in-up-slower">
     <div class="site-group">
         <h2 class="site-group__title green">Development</h2>
             <div class="links">
