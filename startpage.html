@@ -10,22 +10,14 @@
 
         /* The Modal (background) */
         .modal {
-        display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
         z-index: 1; /* Sit on top */
         left: 0;
-        bottom: 0;
+        bottom: -118px;
         width: 100%; /* Full width */
         overflow: auto; /* Enable scroll if needed */
-        animation-name: timerSlideUp;
-        animation-duration: 0.4s;
-        }
-
-        @keyframes timerSlideUp {
-            from {opacity:0;
-            bottom: -100px;}
-            to {opacity: 1;
-            bottom: 0px;}
+        transition: .4s;
+        opacity:0;
         }
 
         .fade-in {
@@ -100,6 +92,7 @@
             top: 0px;
             left: 0px;
             font-weight: 600;
+            user-select: none;
         }
 
         .google-section {
@@ -191,6 +184,7 @@
             cursor: pointer;
             color: white;
             letter-spacing: 1px;
+            user-select: none;
         }
 
         .links-container-timer-tab:hover {
@@ -289,6 +283,7 @@
         font-family: "Roboto Mono", monospace;
         font-weight: 300;
         font-size: 48px;
+        user-select: none;
         }
 
         .gold {
@@ -431,6 +426,7 @@
         <h2 class="site-group__title green">Development</h2>
             <div class="links">
                 <a class="green-hover" href="https://accounts.shopify.com/store-login">Shopify</a>
+                <a class="green-hover" href="https://www.klaviyo.com/dashboard">Klaviyo</a>
                 <a class="green-hover" href="https://www.w3schools.com/cssref/css_selectors.asp">CSS Ref</a>
                 <a class="green-hover" href="https://ship.pirateship.com/ship">Pirate Ship</a>
                 <a class="green-hover" href="https://www.upwork.com/ab/find-work/domestic">Upwork</a>
@@ -467,24 +463,22 @@
     var modal = document.getElementById("myModal");
     
     // Get the button that opens the modal
-    var btn = document.getElementById("timer-button");
+    var timerBtn = document.getElementById("timer-button");
  
     // When the user clicks on <span> (x), close the modal
-    btn.onclick = function() {
-    if (modal.style.display == 'block') {
-      modal.style.display = "none";
+    timerBtn.onclick = function() {
+    if (modal.style.opacity == '1') {
+            modal.style.opacity = "0";    
+            modal.style.bottom = "-118px";    
+        
     }
     else {
-        modal.style.display = "block";
+        modal.style.opacity = "1";    
+        modal.style.bottom = "0px";  
+        
     }
     }
-    
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
+
     </script>
 
 <script>
