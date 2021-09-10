@@ -8,6 +8,26 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Khula:wght@400;600&display=swap');
 
+        /* The Modal (background) */
+        .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        bottom: 0;
+        width: 100%; /* Full width */
+        overflow: auto; /* Enable scroll if needed */
+        animation-name: timerSlideUp;
+        animation-duration: 0.4s;
+        }
+
+        @keyframes timerSlideUp {
+            from {opacity:0;
+            bottom: -100px;}
+            to {opacity: 1;
+            bottom: 0px;}
+        }
+
         .fade-in {
             animation-name: fadeIn;
             animation-duration: .6s;
@@ -30,6 +50,7 @@
             to {opacity: 1;
             top: 0px;}
         }
+        
 
         .fade-in-up-slower {
             animation-name: fadeInUpSlower;
@@ -41,6 +62,8 @@
             20% { opacity:0; top: 100px;}
             100% { opacity:1; top: 0px;}
         }
+
+
 
         * {
             margin: 0;
@@ -147,7 +170,35 @@
             padding: 0;
             background: #191919dd;
             border-radius: 8px;
+            position: relative;
         }
+
+        .links-container-timer-tab {
+            position: absolute;
+            text-align: center;
+            width: 80px;
+            height: 36px;
+            background: #191919dd;
+            right: 15px;
+            bottom: -36px;
+            border-radius: 0px 0px 8px 8px;
+            align-self: flex-end;
+            vertical-align: bottom;
+            padding-top: 6px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            transition: .3s;
+            cursor: pointer;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        .links-container-timer-tab:hover {
+            height: 45px;
+            bottom: -45px;
+            padding-top: 15px;
+        }
+
         .site-group {
             display: flex;
             justify-content: flex-start;
@@ -211,6 +262,84 @@
             transition: .3s;
         }
 
+        .stopwatch {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: #191919dd;
+        }
+
+        .circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 270px;
+        width: 270px;
+
+        border: 2px solid;
+        border-radius: 50%;
+        }
+
+        .time {
+        font-family: "Roboto Mono", monospace;
+        font-weight: 300;
+        font-size: 48px;
+        }
+
+        .gold {
+        font-weight: 900;
+
+        color: #f2c94c;
+        text-shadow: 0 0 0px #fff, 0 0 50px #f2c94c;
+        }
+
+        .controls {
+        display: flex;
+        justify-content: space-between;
+
+        width: 150px;
+        }
+
+        button {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        margin: 0;
+        font-size: 20px;
+        outline: none;
+        transition: .3s;
+        }
+
+        button:hover {
+        filter: drop-shadow(0 0 0.75rem white);
+        }
+
+        #playButton {
+        display: block;
+        padding: 5px;
+        color: #06d6a0;
+        font-weight: 600;
+        }
+
+        #pauseButton {
+        display: none;
+        padding: 5px;
+        color: #ef476f;
+        font-weight: 600;
+        }
+
+        #resetButton {
+        padding: 5px;
+        color: #ef476f;
+        font-weight: 600;
+        }
+
+
         @media only screen and (max-width: 600px) {
             .site-group {
             flex-direction: column;
@@ -227,6 +356,10 @@
     </style>
 
     <script>  
+    
+
+
+
   function date() 
     {   
         var a = Date.now();
@@ -249,6 +382,30 @@
   </head>
 
   <body onload="date()">
+
+
+<div id="myModal" class="modal">
+        <div class="stopwatch">
+            <div class="controls">
+                <button class="buttonPlay">
+                  <span id="playButton">Start</span>
+        
+                  <span id="pauseButton">Stop</span>
+                </button>
+        
+                <button class="buttonReset">
+                  <span id="resetButton">Reset</span>
+                </button>
+              </div>
+              <span class="time" id="display">00:00:00</span>
+
+      
+
+          </div>
+
+
+</div>
+
     <div class="date fade-in">
         <p id="todaysDate"></p>
     </div>
@@ -300,6 +457,121 @@
                 <a class="yellow-hover" href="https://www.amazon.com/">Amazon</a>
             </div> 
     </div>
+
+    <div id="timer-button" class="links-container-timer-tab">Timer</div>
     </div>
   </body>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("timer-button");
+ 
+    // When the user clicks on <span> (x), close the modal
+    btn.onclick = function() {
+    if (modal.style.display == 'block') {
+      modal.style.display = "none";
+    }
+    else {
+        modal.style.display = "block";
+    }
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+// Convert time to a format of hours, minutes, seconds, and milliseconds
+
+function timeToString(time) {
+  let diffInHrs = time / 3600000;
+  let hh = Math.floor(diffInHrs);
+
+  let diffInMin = (diffInHrs - hh) * 60;
+  let mm = Math.floor(diffInMin);
+
+  let diffInSec = (diffInMin - mm) * 60;
+  let ss = Math.floor(diffInSec);
+
+  let diffInMs = (diffInSec - ss) * 100;
+  let ms = Math.floor(diffInMs);
+
+  let formattedMM = mm.toString().padStart(2, "0");
+  let formattedSS = ss.toString().padStart(2, "0");
+  let formattedMS = ms.toString().padStart(2, "0");
+
+  return `${formattedMM}:${formattedSS}:${formattedMS}`;
+}
+
+// Declare variables to use in our functions below
+
+let startTime;
+let elapsedTime = 0;
+let timerInterval;
+
+// Create function to modify innerHTML
+
+function print(txt) {
+  document.getElementById("display").innerHTML = txt;
+}
+
+// Create "start", "pause" and "reset" functions
+
+function start() {
+  startTime = Date.now() - elapsedTime;
+  timerInterval = setInterval(function printTime() {
+    elapsedTime = Date.now() - startTime;
+    print(timeToString(elapsedTime));
+  }, 10);
+  showButton("PAUSE");
+}
+
+function pause() {
+  clearInterval(timerInterval);
+  showButton("PLAY");
+}
+
+function reset() {
+  clearInterval(timerInterval);
+  print("00:00:00");
+  elapsedTime = 0;
+  showButton("PLAY");
+}
+
+window.onbeforeunload = function() {
+    if (elapsedTime > 0) {
+       return "Do you really want to leave our brilliant application?";
+   } else {
+      return;
+   }
+}
+
+// Create function to display buttons
+
+function showButton(buttonKey) {
+  const buttonToShow = buttonKey === "PLAY" ? playButton : pauseButton;
+  const buttonToHide = buttonKey === "PLAY" ? pauseButton : playButton;
+  buttonToShow.style.display = "block";
+  buttonToHide.style.display = "none";
+}
+// Create event listeners
+
+let playButton = document.getElementById("playButton");
+let pauseButton = document.getElementById("pauseButton");
+let resetButton = document.getElementById("resetButton");
+
+playButton.addEventListener("click", start);
+pauseButton.addEventListener("click", pause);
+resetButton.addEventListener("click", reset);
+
+
+
+</script>
 </html>
