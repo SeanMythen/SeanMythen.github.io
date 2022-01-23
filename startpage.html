@@ -402,10 +402,10 @@
 
 </div>
 
-    <div class="date fade-in">
+    <div id="date-container" class="date">
         <p id="todaysDate"></p>
     </div>
-    <div class="google-section fade-in">
+    <div id="google-container" class="google-section">
         <a style="z-index:1;" href="https://mail.google.com/mail/u/0/">
             <img alt="Gmail" src="/images/gmail.png">
          </a>
@@ -419,10 +419,10 @@
             <img alt="Google Maps" src="/images/google-maps.png">
          </a>
     </div>  
-    <form class="search fade-in-up" method="GET" action="https://www.google.com/search" autocomplete="off">
+    <form id="search-container" class="search" method="GET" action="https://www.google.com/search" autocomplete="off">
         <input id="searchbox" type="text" placeholder="" name="q" autofocus>
     </form>
-      <div class="links-container fade-in-up-slower">
+      <div id="links-container" class="links-container">
     <div class="site-group">
         <h2 class="site-group__title green">Development</h2>
             <div class="links">
@@ -458,6 +458,17 @@
     <div id="timer-button" class="links-container-timer-tab">Timer</div>
     </div>
   </body>
+  
+  <script>
+    window.onload = function() {
+  document.getElementById('date-container').className = 'fade-in';
+  document.getElementById('google-container').className = 'fade-in';  
+  document.getElementById('search-container').className = 'fade-in-up'; 
+  document.getElementById('links-container').className = 'fade-in-up-slower'; 
+};    
+  </script>
+  
+  
 
   <script>
     // Get the modal
