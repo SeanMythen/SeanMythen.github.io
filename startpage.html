@@ -93,7 +93,6 @@
             left: 0px;
             font-weight: 600;
             user-select: none;
-            opacity: 0;
         }
 
         .google-section {
@@ -114,7 +113,6 @@
             right: 0px;
             font-weight: 400;
             height: fit-content;
-            opacity: 0;
         }
 
         .google-section a {
@@ -140,8 +138,7 @@
         .search{
             margin: 20px auto 20px;
             width: 50%;      
-            max-width: 1250px;
-            opacity: 0;
+            max-width: 1250px;    
         }
 
         #searchbox {
@@ -168,7 +165,6 @@
             background: #191919dd;
             border-radius: 8px;
             position: relative;
-            opacity: 0;
         }
 
         .links-container-timer-tab {
@@ -406,10 +402,10 @@
 
 </div>
 
-    <div id="date-container" class="date">
+    <div class="date fade-in">
         <p id="todaysDate"></p>
     </div>
-    <div id="google-container" class="google-section">
+    <div class="google-section fade-in">
         <a style="z-index:1;" href="https://mail.google.com/mail/u/0/">
             <img alt="Gmail" src="/images/gmail.png">
          </a>
@@ -423,10 +419,10 @@
             <img alt="Google Maps" src="/images/google-maps.png">
          </a>
     </div>  
-    <form id="search-container" class="search" method="GET" action="https://www.google.com/search" autocomplete="off">
+    <form class="search fade-in-up" method="GET" action="https://www.google.com/search" autocomplete="off">
         <input id="searchbox" type="text" placeholder="" name="q" autofocus>
     </form>
-      <div id="links-container" class="links-container">
+      <div class="links-container fade-in-up-slower">
     <div class="site-group">
         <h2 class="site-group__title green">Development</h2>
             <div class="links">
@@ -462,17 +458,6 @@
     <div id="timer-button" class="links-container-timer-tab">Timer</div>
     </div>
   </body>
-  
-  <script>
-    window.onload = function() {
-  document.getElementById('date-container').classList.add('fade-in');
-  document.getElementById('google-container').classList.add('fade-in');  
-  document.getElementById('search-container').classList.add('fade-in-up'); 
-  document.getElementById('links-container').classList.add('fade-in-up-slower'); 
-};    
-  </script>
-  
-  
 
   <script>
     // Get the modal
