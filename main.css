@@ -194,12 +194,12 @@ h4 > i {
 }
 
 
-#htmlicon, #cssicon, #jsicon, #pythonicon, #giticon, #reacticon, #linuxicon, #windowsicon, #phpicon, #laravelicon, #wordpressicon, #shopifyicon{
+#htmlicon, #cssicon, #jsicon, #pythonicon, #giticon, #reacticon, #linuxicon, #windowsicon, #phpicon, #laravelicon, #wordpressicon, #shopifyicon, #reacticon, #postgresicon, #nodeicon{
   color: rgba(255, 255, 255, 0.8);
   transition: color .2s;
 }
 
-#htmlicon:hover, #cssicon:hover, #jsicon:hover, #pythonicon:hover, #giticon:hover, #reacticon:hover, #linuxicon:hover, #windowsicon:hover, #phpicon:hover, #laravelicon:hover, #wordpressicon:hover, #shopifyicon:hover{
+#htmlicon:hover, #cssicon:hover, #jsicon:hover, #pythonicon:hover, #giticon:hover, #reacticon:hover, #linuxicon:hover, #windowsicon:hover, #phpicon:hover, #laravelicon:hover, #wordpressicon:hover, #shopifyicon:hover, #reacticon:hover, #postgresicon:hover, #nodeicon:hover{
   color: rgba(0, 0, 0, 0.8);
 }
 
