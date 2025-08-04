@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,500,700');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,9 +9,9 @@
 }
 
 
-html{
+html {
   background-color: rgba(255, 255, 255, 1);
-    overflow-x: hidden;
+  overflow-x: hidden;
 
   background: url(images/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -23,7 +24,7 @@ html{
 body {
   font-family: "Roboto", sans-serif;
   opacity: 1;
-  transition: .25s opacity;  
+  transition: .25s opacity;
 }
 
 .fade-out {
@@ -48,7 +49,7 @@ body {
   align-content: center;
 }
 
-#nav > #span1{
+#nav>#span1 {
   position: absolute;
   right: 87px;
   bottom: 47px;
@@ -59,7 +60,7 @@ body {
   font-size: 20px;
 }
 
-#nav > #span2{
+#nav>#span2 {
   position: absolute;
   right: 29px;
   bottom: 47px;
@@ -70,7 +71,7 @@ body {
   font-size: 20px;
 }
 
-#nav > #span3{
+#nav>#span3 {
   position: absolute;
   right: -22px;
   bottom: 47px;
@@ -81,29 +82,29 @@ body {
   font-size: 20px;
 }
 
-#github, i{
+#github, i {
   cursor: pointer;
 }
 
-#linkedin, i{
+#linkedin, i {
   cursor: pointer;
 }
 
-#codepen, i{
+#codepen, i {
   cursor: pointer;
 }
 
-#github:hover + #span1 {
+#github:hover+#span1 {
   visibility: visible;
   opacity: 1;
 }
 
-#codepen:hover + #span2 {
+#codepen:hover+#span2 {
   visibility: visible;
   opacity: 1;
 }
 
-#linkedin:hover + #span3 {
+#linkedin:hover+#span3 {
   visibility: visible;
   opacity: 1;
 }
@@ -119,47 +120,41 @@ body {
   align-items: center;
 }
 
-#skilltitle{
+#skilltitle {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  padding:  3px 0px 3px 0px;
+  padding: 3px 0px 3px 0px;
   box-shadow: 2px -2px 40px -6px black;
-  background-image: linear-gradient(
-    220deg,
-    rgba(255, 60, 0, 0.6),
-    rgba(207, 21, 21, 0.7),
-    rgba(150, 20, 20, 0.8)
-  );
+  background-image: linear-gradient(220deg,
+      rgba(255, 60, 0, 0.6),
+      rgba(207, 21, 21, 0.7),
+      rgba(150, 20, 20, 0.8));
   color: rgba(255, 255, 255, 0.9);
   font-size: 22px;
   border-radius: 5px;
   width: 225px;
 }
 
-#skillsCard{
+#skillsCard {
   margin: 3px 0px 3px 0px;
   text-align: center;
   padding: 5px 5px 5px 5px;
   box-shadow: 2px -2px 40px -6px black;
-  background-image: linear-gradient(
-    220deg,
-    rgba(255, 60, 0, 0.6),
-    rgba(207, 21, 21, 0.7),
-    rgba(150, 20, 20, 0.8)
-  );
+  background-image: linear-gradient(220deg,
+      rgba(255, 60, 0, 0.6),
+      rgba(207, 21, 21, 0.7),
+      rgba(150, 20, 20, 0.8));
   border-radius: 5px;
 }
 
 
-#learningtitle{
+#learningtitle {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  padding:  3px 0px 3px 0px;
+  padding: 3px 0px 3px 0px;
   box-shadow: 2px -2px 40px -6px black;
-  background-image: linear-gradient(
-    220deg,
-    rgba(255, 0, 0, 0.6), rgba(107, 21, 207, 0.6), rgba(150, 20, 20, 0.6)
-  );
+  background-image: linear-gradient(220deg,
+      rgba(255, 0, 0, 0.6), rgba(107, 21, 207, 0.6), rgba(150, 20, 20, 0.6));
   color: rgba(255, 255, 255, 0.9);
   font-size: 22px;
   border-radius: 5px;
@@ -167,20 +162,18 @@ body {
   margin-top: 20px;
 }
 
-#learningCard{
+#learningCard {
   margin: 3px 0px 3px 0px;
   text-align: center;
   padding: 5px 5px 5px 5px;
   box-shadow: 2px -2px 40px -6px black;
-  background-image: linear-gradient(
-    220deg,
-    rgba(255, 0, 0, 0.6), rgba(107, 21, 207, 0.6), rgba(150, 20, 20, 0.6)
-  );
+  background-image: linear-gradient(220deg,
+      rgba(255, 0, 0, 0.6), rgba(107, 21, 207, 0.6), rgba(150, 20, 20, 0.6));
   border-radius: 5px;
 }
 
 
-h4{
+h4 {
   position: relative;
   font-size: 17px;
   letter-spacing: -4px;
@@ -188,18 +181,18 @@ h4{
   margin-bottom: 10px;
 }
 
-h4 > i {
+h4>i {
   cursor: default;
-  padding: 0 10px 0 10px;
+  padding: 5px 10px 0 10px;
 }
 
 
-#htmlicon, #cssicon, #jsicon, #pythonicon, #giticon, #reacticon, #linuxicon, #windowsicon, #phpicon, #laravelicon, #wordpressicon, #shopifyicon, #reacticon, #postgresicon, #nodeicon{
+#htmlicon, #cssicon, #jsicon, #pythonicon, #giticon, #reacticon, #linuxicon, #windowsicon, #phpicon, #laravelicon, #wordpressicon, #shopifyicon, #reacticon, #postgresicon, #nodeicon {
   color: rgba(255, 255, 255, 0.8);
   transition: color .2s;
 }
 
-#htmlicon:hover, #cssicon:hover, #jsicon:hover, #pythonicon:hover, #giticon:hover, #reacticon:hover, #linuxicon:hover, #windowsicon:hover, #phpicon:hover, #laravelicon:hover, #wordpressicon:hover, #shopifyicon:hover, #reacticon:hover, #postgresicon:hover, #nodeicon:hover{
+#htmlicon:hover, #cssicon:hover, #jsicon:hover, #pythonicon:hover, #giticon:hover, #reacticon:hover, #linuxicon:hover, #windowsicon:hover, #phpicon:hover, #laravelicon:hover, #wordpressicon:hover, #shopifyicon:hover, #reacticon:hover, #postgresicon:hover, #nodeicon:hover {
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -214,12 +207,10 @@ h4 > i {
   /* margin-left: 15px; */
   color: black;
   box-shadow: 0px 0px 40px -6px black;
-  background-image: linear-gradient(
-    220deg,
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.6)
-  );
+  background-image: linear-gradient(220deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.6));
   border-radius: 7px;
   padding: 11px 8px 7px 8px;
   transition: box-shadow 0.4s ease, border-radius 0.3s ease;
@@ -236,12 +227,10 @@ h4 > i {
   /* margin-left: 15px; */
   color: black;
   box-shadow: 0px 0px 40px -6px black;
-  background-image: linear-gradient(
-    220deg,
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.6)
-  );
+  background-image: linear-gradient(220deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.6));
   border-radius: 7px;
   padding: 11px 8px 7px 8px;
   transition: box-shadow 0.4s ease, border-radius 0.3s ease;
@@ -253,17 +242,15 @@ h4 > i {
 
 #linkedin {
   position: absolute;
-  
+
   text-decoration: none;
   /* margin-left: 15px; */
   color: black;
   box-shadow: 0px 0px 40px -6px black;
-  background-image: linear-gradient(
-    220deg,
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.6)
-  );
+  background-image: linear-gradient(220deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.6));
   border-radius: 7px;
   padding: 11px 9px 7px 9px;
   transition: box-shadow 0.4s ease, border-radius 0.3s ease;
@@ -278,12 +265,10 @@ h4 > i {
   text-align: center;
   padding: 3px 10px 10px 10px;
   box-shadow: 2px -2px 40px -6px black;
-  background-image: linear-gradient(
-    220deg,
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.6)
-  );
+  background-image: linear-gradient(220deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.6));
   border-radius: 5px;
   margin: 0px 0px 20px 0px;
   margin-bottom: 20px;
@@ -304,6 +289,7 @@ h2 {
 ::-moz-selection {
   color: #0e76a8;
 }
+
 ::selection {
   color: #0e76a8;
 }
@@ -321,12 +307,15 @@ h2 {
   0% {
     color: black;
   }
+
   20% {
     color: transparent;
   }
+
   40% {
     color: black;
   }
+
   100% {
     color: black;
   }
@@ -334,22 +323,20 @@ h2 {
 
 
 
-#portfolio, i{
+#portfolio, i {
   cursor: pointer;
 }
 
-#portfolio {  
+#portfolio {
   position: absolute;
   left: 0px;
   text-decoration: none;
   color: black;
   box-shadow: 0px 0px 40px -6px black;
-  background-image: linear-gradient(
-    220deg,
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.6)
-  );
+  background-image: linear-gradient(220deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.6));
   border-radius: 7px;
   padding: 7px 8px 6px 8px;
   transition: box-shadow 0.4s ease, border-radius 0.3s ease;
@@ -360,7 +347,58 @@ h2 {
   box-shadow: 0px 0px 30px 2px black;
 }
 
-#container{
+#work-with-me {
+  margin-top: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0px 0px 40px -6px black;
+  background-image: linear-gradient(220deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.6));
+  border-radius: 7px;
+  padding: 14px 16px 12px 16px;
+  transition: box-shadow 0.4s ease, border-radius 0.3s ease;
+  font-size: 24px;
+}
+
+#work-with-me:hover {
+  box-shadow: 0px 0px 30px 2px black;
+}
+
+#login {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0px 0px 40px -6px black;
+  background-image: linear-gradient(220deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.6));
+  border-radius: 7px;
+  padding: 4px 8px 3px 8px;
+  transition: box-shadow 0.4s ease, border-radius 0.3s ease;
+  font-size: 15px;
+}
+
+#login:hover {
+  box-shadow: 0px 0px 30px 2px black;
+}
+
+.columns {
+  box-shadow: 0px 0px 40px -6px black;
+  background-image: linear-gradient(220deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.6));
+  padding: 14px 16px 12px 16px;
+  transition: box-shadow 0.4s ease, border-radius 0.3s ease;
+  border-radius: 7px;
+}
+
+
+#container {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -374,7 +412,7 @@ h2 {
   min-height: 500px;
 }
 
-#container2{
+#container2 {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -387,41 +425,39 @@ h2 {
   min-height: 775px;
 }
 
-#top_container{
+#top_container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
 }
 
-#portfolioContainer{
+#portfolioContainer {
   padding: 10px 10px 10px 10px;
   box-shadow: 2px -2px 40px -6px black;
-  background-image: linear-gradient(
-    220deg,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.6)
-  );
+  background-image: linear-gradient(220deg,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.6));
   border-radius: 5px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;  
+  align-items: flex-start;
   max-width: 95vw;
-  
+
 
 }
 
 
 #project {
-  
+
   font-weight: 500;
   margin-top: 5px;
   margin-bottom: 10px;
-  
+
 }
 
 #description {
@@ -432,49 +468,47 @@ h2 {
 
 }
 
-#tools{
+#tools {
   font-weight: 400;
   font-size: 17px;
   color: rgb(32, 116, 211);
-  white-space:nowrap;
+  white-space: nowrap;
 }
 
-#links > a{
+#links>a {
   font-size: 17px;
   cursor: pointer;
   text-decoration: none;
   color: rgb(211, 32, 32);
   transition: .05s;
-  white-space:nowrap;
+  white-space: nowrap;
   padding-bottom: 2px;
   border-bottom: 0px solid rgb(211, 32, 32);
-  
+
 }
 
-#links > a:hover{
+#links>a:hover {
   border-bottom: 2px solid rgb(211, 32, 32);
   padding-bottom: 0px;
 
 }
 
 
-#links{
+#links {
   margin-top: 10px;
 }
 
-#backHome{
+#backHome {
   font-size: 12px;
   cursor: pointer;
   z-index: 2;
   margin-bottom: 10px;
   color: black;
   box-shadow: 0px 0px 40px -6px black;
-  background-image: linear-gradient(
-    220deg,
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.6)
-  );
+  background-image: linear-gradient(220deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.6));
   border-radius: 7px;
   padding: 11px 8px 7px 8px;
   transition: box-shadow 0.4s ease, border-radius 0.3s ease;
@@ -485,21 +519,21 @@ h2 {
 }
 
 
-#portfolioPage{
+#portfolioPage {
   margin-top: auto;
   margin-bottom: auto;
   width: 90vw;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;  
-  opacity: 1;  
+  align-items: center;
+  opacity: 1;
   visibility: visible;
 
 }
 
-#project > a {
+#project>a {
   font-size: 45px;
   cursor: pointer;
   color: black;
@@ -508,7 +542,7 @@ h2 {
   border-bottom: 4px solid black;
 }
 
-#project > a:hover {
+#project>a:hover {
   cursor: pointer;
   color: rgb(211, 32, 32);
   border-bottom: 4px solid rgb(211, 32, 32);
@@ -530,38 +564,40 @@ h2 {
   h2 {
     font-size: 4.5vw;
   }
-    h4{
-    white-space: nowrap; 
-  }
 
-  #project > a{
+  h4 {}
+
+  #project>a {
     line-height: 80px;
-    
+
   }
 
 }
 
 @media only screen and (max-width: 540px) {
 
-  #github:hover + #span1 {
+  #github:hover+#span1 {
     visibility: hidden;
   }
 
-  #codepen:hover + #span2 {
+  #codepen:hover+#span2 {
     visibility: hidden;
   }
 
-  #linkedin:hover + #span3 {
+  #linkedin:hover+#span3 {
     visibility: hidden;
-  }  
-  
+  }
+
   h1 {
     font-size: 10.75vw;
   }
 
-  h4{
-    white-space: nowrap;
-    font-size: 12px;
+  h4 {
+    font-size: 10px;
+  }
+
+  #skillsCard {
+    width: 300px;
   }
 }
 
@@ -571,15 +607,15 @@ h2 {
   }
 
 
-  #skilltitle, #learningtitle{
+  #skilltitle, #learningtitle {
     font-size: 18px;
   }
 
-  h4{
-    font-size: 12px;
+  h4 {
+    font-size: 10px;
   }
 
-  #project > a{
+  #project>a {
     font-size: 30px;
     line-height: 60px;
   }
@@ -595,12 +631,11 @@ h2 {
     font-size: 12.5vw;
   }
 
-  h4{
-    white-space: nowrap;
-    font-size: 12px;
+  h4 {
+    font-size: 10px;
   }
 
-  #container2{
+  #container2 {
     min-height: 900px;
   }
 }
@@ -614,18 +649,17 @@ h2 {
     font-size: 11.25vw;
   }
 
-  h4{
-    white-space: nowrap;
-    font-size: 12px;
+  h4 {
+    font-size: 10px;
   }
 
-  #project > a{
-    font-size: 25px;    
+  #project>a {
+    font-size: 25px;
     margin-bottom: 0px;
   }
 
-  #tools{
-    margin-top:0px;
+  #tools {
+    margin-top: 0px;
     padding-top: 0px;
     font-size: 12px;
   }
@@ -633,5 +667,4 @@ h2 {
   #portfolio {
     position: absolute;
   }
-  }
-
+}
