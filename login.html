@@ -58,12 +58,25 @@
             width: 100%;
             height: 100vh;
         }
+
+        .backHome-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
     </style>
 
     <script>document.getElementById('body').className += ' fade-out';</script>
 
 
     <div class="main-page-container">
+
+        <div class="backHome-container">
+            <a id="backHome" href="/">
+                <i class="fa fa-home fa-2x"></i>
+            </a>
+        </div>
         <div data-o-auth="1" data-mode="embed" data-widget-mode="login">
         </div>
     </div>
