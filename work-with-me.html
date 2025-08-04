@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHCD4P7GT8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WHCD4P7GT8');
+    </script>
+
+    <style>
+        html {
+            background: url(images/bg.jpg) no-repeat center center fixed;
+        }
+    </style>
+
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Seán Mythen</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <script src="https://kit.fontawesome.com/9b83943fc2.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Shopify Developer">
+    <meta name="author" content="Seán Mythen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+
+    <script>
+        var o_options = {
+            domain: 'sean-mythen-web-development.outseta.com',
+            load: 'auth,customForm,emailList,leadCapture,nocode,profile,support'
+        };
+    </script>
+    <script src="https://cdn.outseta.com/outseta.min.js" data-options="o_options">
+    </script>
+
+</head>
+
+<body id="body">
+
+    <script>document.getElementById('body').className += ' fade-out';</script>
+
+
+
+    <div id="pricing-parent-container">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .columns {
+                float: left;
+                width: 33.33%;
+                padding: 8px;
+                margin: 0 10px;
+            }
+
+            .price {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                transition: 0.3s;
+            }
+
+            .price:hover {
+                box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+            }
+
+            .price .header {
+                font-size: 24px;
+                text-align: center;
+                padding: 16px;
+                font-weight: bold;
+                background-image: linear-gradient(220deg, rgba(255, 60, 0, 0.6), rgba(207, 21, 21, 0.7), rgba(150, 20, 20, 0.8));
+                color: rgba(255, 255, 255, 0.9);
+                border-radius: 7px;
+            }
+
+            .price li {
+                border-bottom: 1px solid #7f7f7f;
+                padding: 16px;
+                text-align: center;
+                background: white;
+            }
+
+            .price .grey {
+                background-color: #eee;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .button {
+                background-image: linear-gradient(220deg, rgba(255, 60, 0, 0.6), rgba(207, 21, 21, 0.7), rgba(150, 20, 20, 0.8));
+                color: rgba(255, 255, 255, 0.9);
+                border-radius: 7px;
+                border: none;
+                padding: 10px 25px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 18px;
+                cursor: pointer;
+            }
+
+            .pricing-plans-parent-container {
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                max-width: 1000px;
+                width: 100%;
+            }
+
+            .main-page-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100vh;
+            }
+
+            @media only screen and (max-width: 800px) {
+                .columns {
+                    width: 100%;
+                    margin: 0 0 16px 0;
+                }
+
+                .main-page-container {
+                    height: auto;
+                }
+
+                .pricing-plans-parent-container {
+                    max-width: 600px;
+                    flex-direction: column;
+                }
+
+                #card {
+                    max-width: 600px;
+
+                }
+
+                #backHome {
+                    margin-top: 20px;
+                }
+            }
+        </style>
+
+
+        <div class="main-page-container">
+
+
+            <a id="backHome" href="/">
+                <i class="fa fa-home fa-2x"></i>
+            </a>
+
+            <!-- 
+            <div style="min-width: 150px;" id="card">
+
+                <h4>
+                    <i style="margin-right: 7px;" class="fas fa-code fa-2x"></i>
+                </h4>
+            </div> -->
+
+            <div id="card">
+                <h1 style="text-align:center; font-size: 35px; padding: 10px;">Monthly Retainer Plans</h1>
+                <h2 style="text-align:center; font-size: 20px; padding: 0 10px;">Select a service tier tailored to your
+                    website's scale, complexity, and growth strategy
+                </h2>
+            </div>
+
+
+            <div class="pricing-plans-parent-container">
+                <div class="columns">
+                    <ul class="price">
+                        <li class="header">Starter</li>
+                        <li class="grey">$500 / month</li>
+                        <li>Up to 3 dev tasks per month</li>
+                        <li>Content edits and product tweaks</li>
+                        <li>Admin help and troubleshooting</li>
+                        <li>Theme setting adjustments and basic layout edits</li>
+                        <li>App installations and simple integrations</li>
+                        <li class="grey"><a
+                                href="https://sean-mythen-web-development.outseta.com/auth?widgetMode=register&planUid=gWKVMr9p&planPaymentTerm=month&skipPlanOptions=true#o-anonymous"
+                                class="button">Select Plan</a></li>
+                    </ul>
+                </div>
+
+                <div class="columns">
+                    <ul class="price">
+                        <li class="header">Growth</li>
+                        <li class="grey">$1,500 / month</li>
+                        <li>Everything in 'Starter'</li>
+                        <li>Up to 7 dev tasks per month</li>
+                        <li>Custom sections and feature development</li>
+                        <li>Landing page builds and template optimization</li>
+                        <li>Advanced product logic and filtering</li>
+                        <li>App integrations and technical improvements</li>
+                        <li class="grey"><a
+                                href="https://sean-mythen-web-development.outseta.com/auth?widgetMode=register&planUid=z9M3rXm4&planPaymentTerm=month&skipPlanOptions=true#o-anonymous"
+                                class="button">Select Plan</a></li>
+                    </ul>
+                </div>
+
+                <div class="columns">
+                    <ul class="price">
+                        <li class="header">Pro</li>
+                        <li class="grey">$3,000 / month</li>
+                        <li>Everything in 'Starter' & 'Growth'</li>
+                        <li>Up to 15 dev tasks per month</li>
+                        <li>Full custom feature builds and strategy</li>
+                        <li>Theme performance audits and CRO implementation</li>
+                        <li>Support for product launches and promotions</li>
+                        <li>Custom architecture or scaling support</li>
+                        <li>Ongoing planning and collaboration</li>
+                        <li class="grey"><a
+                                href="https://sean-mythen-web-development.outseta.com/auth?widgetMode=register&planUid=vW5J0Nm4&planPaymentTerm=month&skipPlanOptions=true#o-anonymous"
+                                class="button">Select Plan</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <script src="main.js"></script>
+</body>
+
+</html>
