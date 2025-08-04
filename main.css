@@ -367,7 +367,7 @@ h2 {
   box-shadow: 0px 0px 30px 2px black;
 }
 
-#login {
+#login, #logout {
   cursor: pointer;
   text-decoration: none;
   color: black;
@@ -382,7 +382,7 @@ h2 {
   font-size: 15px;
 }
 
-#login:hover {
+#login:hover, #logout:hover {
   box-shadow: 0px 0px 30px 2px black;
 }
 
