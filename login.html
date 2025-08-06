@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHCD4P7GT8"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-WHCD4P7GT8');
+      gtag("config", "G-WHCD4P7GT8");
     </script>
 
     <style>
-        html {
-            background: url(images/bg.jpg) no-repeat center center fixed;
-        }
+      html {
+        background: url(images/bg.jpg) no-repeat center center fixed;
+      }
     </style>
-
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,60 +30,54 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <script src="https://kit.fontawesome.com/9b83943fc2.js" crossorigin="anonymous"></script>
-    <meta name="description" content="Shopify Developer">
-    <meta name="author" content="Seán Mythen">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <meta name="description" content="Shopify Developer" />
+    <meta name="author" content="Seán Mythen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 
     <link rel="prefetch" href="portfolio.html" />
 
     <script>
-        var o_options = {
-            domain: 'sean-mythen-web-development.outseta.com',
-            load: 'auth,customForm,emailList,leadCapture,nocode,profile,support'
-        };
+      var o_options = {
+        domain: "sean-mythen-web-development.outseta.com",
+        load: "auth,customForm,emailList,leadCapture,nocode,profile,support",
+      };
     </script>
-    <script src="https://cdn.outseta.com/outseta.min.js" data-options="o_options">
-    </script>
+    <script src="https://cdn.outseta.com/outseta.min.js" data-options="o_options"></script>
+  </head>
 
-</head>
-
-<body id="body">
-
+  <body id="body">
     <style>
-        .main-page-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            height: 100vh;
-        }
+      .main-page-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+      }
 
-        .backHome-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 30px;
-        }
+      .backHome-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+      }
     </style>
 
-    <script>document.getElementById('body').className += ' fade-out';</script>
-
+    <script>
+      document.getElementById("body").className += " fade-out";
+    </script>
 
     <div class="main-page-container">
-
-        <div class="backHome-container">
-            <a id="backHome" href="/">
-                <i class="fa fa-home fa-2x"></i>
-            </a>
-        </div>
-        <div data-o-auth="1" data-mode="embed" data-widget-mode="login">
-        </div>
+      <div class="backHome-container">
+        <a id="backHome" href="/">
+          <i class="fa fa-home fa-2x"></i>
+        </a>
+      </div>
+      <div data-o-auth="1" data-mode="embed" data-widget-mode="login"></div>
     </div>
 
-
-
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
